@@ -4,9 +4,15 @@
              x:Class="BMXS7SQLITE.Elemento">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="ACTUALIZAR - ELIMINIAR" FontSize="24" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtNombre" Placeholder="Nombre"/>
+            <Entry x:Name="txtUsuario" Placeholder="Usuario"/>
+            <Entry x:Name="txtContrasena" Placeholder="Contrasena"/>
+
+            <Button x:Name="btnActualizar" Text="ACTUALIZAR"   Clicked="btnActualizar_Clicked"/>
+            <Button x:Name="btnEliminar" Text="ELIMINAR" Clicked="btnEliminar_Clicked"/>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
