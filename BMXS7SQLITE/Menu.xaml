@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMXS7SQLITE.Menu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana Registro CANCHAS"/>
+            <Entry x:Name="txtNombreC" Placeholder="NombreCancha"/>
+            <Entry x:Name="txtDireccion" Placeholder="Direccion"/>
+            <Entry x:Name="txtprecio" Placeholder="Precio"/>
+            <Entry x:Name="txtestado" Placeholder="Estado"/>
+
+            <Button x:Name="btnRegistar" Text="REGISTRAR" Clicked="btnRegistar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -40,7 +40,7 @@ namespace BMXS7SQLITE
                 IEnumerable<Estudiante> resultado = Select_Where(db, txtUsuario.Text, txtContrasena.Text);
                 if (resultado.Count() > 0)
                 {
-                    Navigation.PushAsync(new ConsultaRegistro());
+                    Navigation.PushAsync(new Menu());
                 }
                 else
                 {

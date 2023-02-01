@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMXS7SQLITE.ConsultaCancha">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="LISTA DE USUARIOS!" FontSize="24" HorizontalTextAlignment="Center"
+                />
+            <ListView x:Name="ListaCancha" ItemSelected="OneSelection">
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+                        <TextCell Text="{Binding NombreCancha}" Detail="{Binding Direccion}"/>
+
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+
+            </ListView>
+            <Button x:Name="btnRegresar" Text="REGRESAR" Clicked="btnRegresar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
